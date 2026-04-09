@@ -35,8 +35,8 @@ export function generatePDF(doc: InvoiceDocument) {
   pdf.setFontSize(8);
   pdf.setTextColor(100, 100, 100);
   pdf.text('KunTechnologies Ltd.', 14, y);
-  pdf.text('info@kuntechnologies.com | +254 700 000 000', 14, y + 5);
-  pdf.text('Nairobi, Kenya', 14, y + 10);
+  pdf.text('info@kuntechnologies.com | +263 779 968 190', 14, y + 5);
+  pdf.text('Victoria Falls Zimbabwe', 14, y + 10);
 
   // Customer info
   pdf.setTextColor(30, 30, 30);

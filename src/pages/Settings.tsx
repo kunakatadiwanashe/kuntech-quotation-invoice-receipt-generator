@@ -18,8 +18,8 @@ export default function SettingsPage() {
         <CardContent className="space-y-2 text-sm">
           <p><span className="text-muted-foreground">Company:</span> KunTechnologies Ltd.</p>
           <p><span className="text-muted-foreground">Email:</span> info@kuntechnologies.com</p>
-          <p><span className="text-muted-foreground">Phone:</span> +254 700 000 000</p>
-          <p><span className="text-muted-foreground">Location:</span> Nairobi, Kenya</p>
+          <p><span className="text-muted-foreground">Phone:</span> +263 779 968 190</p>
+          <p><span className="text-muted-foreground">Location:</span> Victoria Falls Zimbabwe</p>
           <p className="text-xs text-muted-foreground pt-4">
             To update company details, connect for persistent storage.
           </p>
