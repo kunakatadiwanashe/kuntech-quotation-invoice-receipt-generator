@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { forwardRef } from "react";
-import { cn } from "@/lib/utils";
 import { LinkProps } from 'next/link';
 
 const NavLink = forwardRef<HTMLAnchorElement, LinkProps>(
