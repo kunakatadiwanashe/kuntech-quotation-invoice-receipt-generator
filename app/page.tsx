@@ -1,5 +1,5 @@
 "use client";
 
-import Dashboard from '@/pages/Dashboard';
+import Dashboard from '/app/dashboard/page.tsx';
 
 export default Dashboard;

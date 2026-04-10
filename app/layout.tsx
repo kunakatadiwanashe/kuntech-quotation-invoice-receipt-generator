@@ -6,6 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { AppSidebar } from "../src/components/AppSidebar";
+import { AuthProvider } from "@/contexts/AuthContext";
+import { useAuth } from "@/contexts/AuthContext";
+
 import {
   SidebarInset,
   SidebarProvider,
@@ -39,6 +42,8 @@ export default function RootLayout({
     return () => clearInterval(interval);
   }, []);
 
+  const { user } = useAuth();
+  
   const getGreeting = () => {
     if (!time) return "Welcome";
 
@@ -53,6 +58,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen font-sans antialiased">
         <QueryClientProvider client={queryClient}>
+          <AuthProvider>
           <TooltipProvider>
             <Sonner />
             <Toaster />
@@ -71,7 +77,7 @@ export default function RootLayout({
                                           {/* Greeting */}
                     <div className="px-4 md:px-6 pb-2">
                       <h1 className="text-lg font-semibold tracking-tight">
-                        {mounted ? `${getGreeting()}, Tadiwanashe 👋` : "Welcome"}
+                        {mounted ? `${getGreeting()}, ${user?.displayName || "User"} 👋` : "Welcome"}
                       </h1>
                       <p className="text-sm text-muted-foreground">
                         Welcome back to Kuntech
@@ -116,6 +122,7 @@ export default function RootLayout({
             </SidebarProvider>
 
           </TooltipProvider>
+          </AuthProvider>
         </QueryClientProvider>
       </body>
     </html>

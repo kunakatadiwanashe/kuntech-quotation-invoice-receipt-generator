@@ -16,6 +16,7 @@ import { downloadPDF, printPDF } from "@/lib/pdf";
 import { Plus, Trash2, Download, Printer } from "lucide-react";
 import { getDocuments } from "@/lib/store";
 import type { InvoiceDocument } from "@/types";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 function generateId() {
   return Math.random().toString(36).slice(2, 11);
@@ -159,6 +160,8 @@ export default function CreateDocument() {
 
 
   return (
+    <ProtectedRoute>
+    
     <div className="space-y-6 animate-fade-in max-w-4xl">
       <div>
         <h1 className="text-2xl font-bold tracking-tight">Create {typeLabel}</h1>
@@ -384,5 +387,6 @@ export default function CreateDocument() {
       </div>
 
     </div>
+    </ProtectedRoute> 
   );
 }

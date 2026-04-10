@@ -59,8 +59,8 @@ export function AppSidebar() {
           <Image
             src="/logo.png"
             alt="Kuntech Logo"
-            width={52}
-            height={52}
+            width={122}
+            height={122}
           />
         </div>
       </SidebarHeader>

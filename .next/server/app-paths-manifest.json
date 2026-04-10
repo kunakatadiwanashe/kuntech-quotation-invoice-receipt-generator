@@ -1,6 +1,12 @@
 {
-  "/documents/create/page": "app/documents/create/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/customers/page": "app/customers/page.js",
   "/dashboard/page": "app/dashboard/page.js",
+  "/documents/[...slug]/page": "app/documents/[...slug]/page.js",
+  "/documents/create/page": "app/documents/create/page.js",
   "/documents/page": "app/documents/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js",
   "/settings/page": "app/settings/page.js"
 }

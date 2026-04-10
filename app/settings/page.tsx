@@ -1,8 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ProtectedRoute from "@/components/ProtectedRoute";
 import { Settings as SettingsIcon } from "lucide-react";
 
 export default function SettingsPage() {
   return (
+    <ProtectedRoute>
+    
     <div className="space-y-6 animate-fade-in max-w-2xl">
       <div>
         <h1 className="text-2xl font-bold tracking-tight">Settings</h1>
@@ -26,5 +29,6 @@ export default function SettingsPage() {
         </CardContent>
       </Card>
     </div>
+    </ProtectedRoute>
   );
 }

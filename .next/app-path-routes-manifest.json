@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/customers/page": "/customers",
+  "/dashboard/page": "/dashboard",
+  "/documents/[...slug]/page": "/documents/[...slug]",
+  "/documents/create/page": "/documents/create",
+  "/documents/page": "/documents",
+  "/login/page": "/login",
+  "/page": "/",
+  "/register/page": "/register",
+  "/settings/page": "/settings"
+}

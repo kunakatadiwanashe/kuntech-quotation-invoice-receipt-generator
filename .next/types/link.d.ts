@@ -34,15 +34,14 @@ declare namespace __next_route_internal_types__ {
   type StaticRoutes = 
     | `/`
     | `/CreateDocument`
-    | `/Customers`
-    | `/Dashboard`
     | `/Documents`
     | `/NotFound`
-    | `/Settings`
     | `/customers`
     | `/dashboard`
     | `/documents`
     | `/documents/create`
+    | `/login`
+    | `/register`
     | `/settings`
   type DynamicRoutes<T extends string = string> = 
     | `/documents/${CatchAllSlug<T>}`
